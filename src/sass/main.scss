@@ -1,1 +1,8 @@
+@import "utils/abstracts.scss";
+@import "utils/variables.scss";
+
+@import "base/border-box";
 @import "base/reset";
+@import "base/inner-elements";
+
+@import "components/searchinput";
