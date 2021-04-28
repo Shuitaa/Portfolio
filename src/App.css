@@ -1,4 +1,13 @@
+.search__container input, .search__container {
+  background: var(--grey-1);
+  font-size: 14px;
+  font-weight: 300;
+  height: 100%;
+  width: 100%;
+}
+
 :root {
+  --grey-4: #262626;
   --grey-3: #8e8e8e;
   --grey-2: #dbdbdb;
   --grey-1: #fafafa;
@@ -396,26 +405,26 @@ div {
 }
 .search__input {
   font-size: 16px;
+  padding: 3px 10px 3px 26px;
 }
 .search__container {
-  height: 100%;
-  width: 100%;
   cursor: text;
-  font-size: 14px;
-  font-weight: 300;
   padding: 7px;
   text-align: center;
   border-radius: 3px;
-  color: var(--grey-3);
-  justify-content: center;
   border: solid 1px var(--grey-2);
-  background: var(--grey-1);
+  justify-content: center;
 }
 .search__container div {
   display: inline;
+  color: var(--grey-3);
   left: -5px;
 }
-.search__icon {
+.search__container input {
+  border: 0px;
+  color: var(--grey-4);
+}
+.search__icon, .search__icon--focus {
   background-image: url(./images/icons/icons.png);
   display: inline-block;
   margin-right: 6px;
@@ -423,6 +432,28 @@ div {
   width: 10px;
   background-size: 440px 411px;
   background-position: -428px -241px;
+}
+.search__icon--focus {
+  margin: 0;
+  left: 11px;
+  position: absolute;
+  top: 6.75px;
+  z-index: 2;
+}
+
+.cancel__icon--focus {
+  background-image: url(./images/icons/icons.png);
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: 440px 411px;
+  background-position: -380px -96px;
+  margin: 0;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  z-index: 3;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=App.css.map */
