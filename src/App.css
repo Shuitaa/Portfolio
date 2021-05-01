@@ -409,6 +409,7 @@ div, nav {
   height: 54px;
   border-bottom: 1px solid var(--grey-2);
   justify-content: center;
+  background-color: #FFF;
 }
 .navbar__container {
   width: 975px;
@@ -425,6 +426,7 @@ div, nav {
   height: 28px;
   min-width: 125px;
   width: 215px;
+  left: 60px;
 }
 .search__input {
   font-size: 16px;
@@ -437,6 +439,7 @@ div, nav {
   border-radius: 3px;
   border: solid 1px var(--grey-2);
   justify-content: center;
+  background-color: var(--grey-1);
 }
 .search__container div {
   display: inline;
