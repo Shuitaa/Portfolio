@@ -391,11 +391,34 @@ textarea {
   padding: 0.2em 0;
 }
 
+body {
+  background-color: var(--grey-1);
+}
+
 div {
-  display: flex;
   flex-direction: column;
   position: relative;
   font-family: "Roboto", sans-serif;
+}
+
+div, nav {
+  display: flex;
+}
+
+.navbar {
+  height: 54px;
+  border-bottom: 1px solid var(--grey-2);
+  justify-content: center;
+}
+.navbar__container {
+  width: 975px;
+  flex-direction: row;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__img {
+  margin-top: 7px;
 }
 
 .search {
@@ -450,10 +473,30 @@ div {
   background-position: -380px -96px;
   margin: 0;
   position: absolute;
-  right: 5px;
+  right: -6px;
   top: 2px;
   z-index: 3;
   cursor: pointer;
+}
+
+.navitem {
+  margin-left: 22px;
+}
+.navitem:first-child {
+  margin: 0px;
+}
+
+.navitems__container {
+  flex-direction: row;
+  padding-left: 24px;
+}
+
+.navprofile {
+  border-radius: 50px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  background-color: black;
 }
 
 /*# sourceMappingURL=App.css.map */

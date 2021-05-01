@@ -1,13 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 
-import SearchInput from './components/SearchInput';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
-    <>
-      <SearchInput/>
-    </>
+    <NavBar />
   );
 }
 

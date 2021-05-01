@@ -5,4 +5,8 @@
 @import "base/reset";
 @import "base/inner-elements";
 
+@import "layouts/navbar";
+
 @import "components/searchinput";
+@import "components/navitem.scss";
+@import "components/navprofile.scss";

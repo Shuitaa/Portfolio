@@ -1,0 +1,16 @@
+.navitem{
+    margin-left: 22px;
+
+    &:first-child{
+        margin: 0px;
+    }
+}
+
+.navitems{
+
+    &__container{
+        flex-direction: row;
+        padding-left: 24px;
+    }
+}
+

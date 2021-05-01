@@ -1,0 +1,15 @@
+.navbar {
+    height: 54px;
+    border-bottom: 1px solid var(--grey-2);
+    justify-content: center;
+    &__container{
+        width: 975px;
+        flex-direction: row;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+        &__img{
+        margin-top: 7px;
+    }
+}

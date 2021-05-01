@@ -16,24 +16,24 @@ function SearchInput() {
     setIsFocused(true);
   }
 
-  function onExit(event){
-    if(event.target === input.current) return false;
-    if(isFocused) setIsFocused(false);
+  function onExit(){
+    setIsFocused(false);
   }
 
   function onChange(){
     let val = input.current.value;
-    setValue(val);
+    if(val === '') return setValue("Search")
+    return setValue(val);
   }
 
   return (
-    <div className="search" onClick={onFocus} onBlur={onExit}>
+    <div className="search" onClick={onFocus}>
       <div className="search__container">
         <div>
           {isFocused 
             ? <>
                 <span className="search__icon--focus"></span>
-                <input type="text" className="search__input" placeholder={value} onChange={onChange} ref={input}/>
+                <input type="text" className="search__input" placeholder={value} onChange={onChange} ref={input} value={value === "Search" ? "" : value}/>
                 <span className="cancel__icon--focus" onClick={onExit}></span>
               </>
             : <>

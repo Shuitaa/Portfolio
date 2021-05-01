@@ -1,6 +1,12 @@
+body {
+    background-color: var(--grey-1);
+}
 div {
-    display: flex;
     flex-direction: column;
     position: relative;
     font-family: 'Roboto', sans-serif;
+}
+
+div, nav {
+    display: flex;
 }
