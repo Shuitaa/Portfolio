@@ -1,0 +1,14 @@
+.home {
+    justify-content: center;
+
+    &__container {
+        width: 975px;
+        padding: 0px 20px;
+        padding-top: 30px;
+    }
+
+    &__content {
+        max-width: 614px;
+        width: 100%;
+    }
+}

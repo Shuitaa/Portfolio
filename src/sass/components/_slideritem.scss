@@ -1,0 +1,29 @@
+.slideritem{
+    height: 118px;
+    width: 80px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    top: 2px;
+    position: relative;
+
+    &__container {
+        background: 0 0;
+        border: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    &__img{
+        border-radius: 100px;
+        margin-bottom: 1px;
+        width: 64px;
+        height: 64px;
+        overflow: hidden;
+        & img {
+            width: 100%;
+        }
+    }
+}

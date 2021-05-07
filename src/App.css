@@ -1,16 +1,16 @@
+:root {
+  --grey-4: #262626;
+  --grey-3: #8e8e8e;
+  --grey-2: #dbdbdb;
+  --grey-1: #fafafa;
+}
+
 .search__container input, .search__container {
   background: var(--grey-1);
   font-size: 14px;
   font-weight: 300;
   height: 100%;
   width: 100%;
-}
-
-:root {
-  --grey-4: #262626;
-  --grey-3: #8e8e8e;
-  --grey-2: #dbdbdb;
-  --grey-1: #fafafa;
 }
 
 *,
@@ -401,7 +401,7 @@ div {
   font-family: "Roboto", sans-serif;
 }
 
-div, nav {
+div, nav, main, button, ul {
   display: flex;
 }
 
@@ -420,6 +420,55 @@ div, nav {
 }
 .navbar__img {
   margin-top: 7px;
+}
+
+.slider {
+  background-color: #fff;
+  border: 1px solid var(--grey-2);
+  width: 100%;
+}
+.slider span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--grey-4);
+  margin-top: 4px;
+  font-size: 12px;
+  display: block;
+  line-height: 14px;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 74px;
+  letter-spacing: 0.01em;
+}
+.slider ul {
+  flex-direction: row;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.slider__icon-right {
+  width: 45px;
+  height: 45px;
+  background-image: url(./images/icons/glyphs.png);
+  position: absolute;
+  background-size: 544px 520px;
+  right: 0.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-position: -366px -329px;
+}
+
+.home {
+  justify-content: center;
+}
+.home__container {
+  width: 975px;
+  padding: 0px 20px;
+  padding-top: 30px;
+}
+.home__content {
+  max-width: 614px;
+  width: 100%;
 }
 
 .search {
@@ -500,6 +549,34 @@ div, nav {
   height: 22px;
   cursor: pointer;
   background-color: black;
+}
+
+.slideritem {
+  height: 118px;
+  width: 80px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  top: 2px;
+  position: relative;
+}
+.slideritem__container {
+  background: 0 0;
+  border: 0;
+  padding: 0;
+  flex-direction: column;
+}
+.slideritem__img {
+  border-radius: 100px;
+  margin-bottom: 1px;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+}
+.slideritem__img img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=App.css.map */

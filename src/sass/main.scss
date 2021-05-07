@@ -1,12 +1,16 @@
-@import "utils/abstracts.scss";
 @import "utils/variables.scss";
+@import "utils/abstracts.scss";
 
 @import "base/border-box";
 @import "base/reset";
 @import "base/inner-elements";
 
 @import "layouts/navbar";
+@import "layouts/slider";
+
+@import "pages/home";
 
 @import "components/searchinput";
 @import "components/navitem.scss";
 @import "components/navprofile.scss";
+@import "components/slideritem.scss";
