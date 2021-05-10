@@ -24,7 +24,7 @@ function Slider(){
             ? val+=processDistance()
             : val-=processDistance());
 
-        if((val - listSize) >= -612) setStatus("right")
+        if((val - listSize) >= -listSize) setStatus("right")
         else if((-val + listSize) >= lastChildLeft)setStatus("left")
         else setStatus("both")
             
