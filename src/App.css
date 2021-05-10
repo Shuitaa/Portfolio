@@ -426,6 +426,7 @@ div, nav, main, button, ul {
   background-color: #fff;
   border: 1px solid var(--grey-2);
   width: 100%;
+  overflow: hidden;
 }
 .slider span {
   overflow: hidden;
@@ -442,8 +443,6 @@ div, nav, main, button, ul {
 }
 .slider ul {
   flex-direction: row;
-  overflow: hidden;
-  padding: 0 10px;
 }
 .slider__icon-right {
   width: 45px;
@@ -456,6 +455,19 @@ div, nav, main, button, ul {
   transform: translateY(-50%);
   cursor: pointer;
   background-position: -366px -329px;
+}
+.slider__icon-left {
+  width: 45px;
+  height: 45px;
+  background-image: url(./images/icons/glyphs.png);
+  position: absolute;
+  background-size: 544px 520px;
+  left: 0.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-position: -320px -329px;
+  z-index: 1;
 }
 
 .home {
@@ -567,6 +579,7 @@ div, nav, main, button, ul {
   border: 0;
   padding: 0;
   flex-direction: column;
+  align-items: center;
 }
 .slideritem__img {
   border-radius: 100px;
@@ -577,6 +590,9 @@ div, nav, main, button, ul {
 }
 .slideritem__img img {
   width: 100%;
+}
+.slideritem:first-child {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=App.css.map */
