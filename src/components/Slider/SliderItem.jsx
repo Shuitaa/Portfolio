@@ -1,20 +1,11 @@
-import { useEffect, useRef } from "react";
+import ProfilePicture from "../ProfilePicture";
 
 function SliderItem(){
 
-    let item = useRef()
-
-    useEffect(()=>{
-        if(item.current.offsetLeft < 614 - (item.current.offsetWidth + 20))
-            console.log(true);
-    }, [])
-
     return (
-        <li className="slideritem" ref={item} >
+        <li className="slideritem">
             <button className="slideritem__container">
-                <div className="slideritem__img">
-                    <img src="dino.JPG" alt="" />
-                </div>
+                <ProfilePicture size="64"/>
                 <span>dinoeazezaezakorofkazok</span>
             </button>
         </li>

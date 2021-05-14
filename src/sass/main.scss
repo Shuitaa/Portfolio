@@ -7,6 +7,8 @@
 
 @import "layouts/navbar";
 @import "layouts/slider";
+@import "layouts/card";
+
 
 @import "pages/home";
 
@@ -14,3 +16,5 @@
 @import "components/navitem.scss";
 @import "components/navprofile.scss";
 @import "components/slideritem.scss";
+@import "components/profilepicture";
+@import "components/comment";

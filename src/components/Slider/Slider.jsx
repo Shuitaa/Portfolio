@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import SliderItem from './SliderItem'
 
 function Slider(){

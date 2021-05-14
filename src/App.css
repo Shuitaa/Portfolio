@@ -401,7 +401,13 @@ div {
   font-family: "Roboto", sans-serif;
 }
 
-div, nav, main, button, ul {
+button {
+  background: 0 0;
+  border: 0;
+  padding: 0;
+}
+
+div, nav, main, button, ul, article {
   display: flex;
 }
 
@@ -427,6 +433,7 @@ div, nav, main, button, ul {
   border: 1px solid var(--grey-2);
   width: 100%;
   overflow: hidden;
+  margin-bottom: 24px;
 }
 .slider span {
   overflow: hidden;
@@ -468,6 +475,14 @@ div, nav, main, button, ul {
   cursor: pointer;
   background-position: -320px -329px;
   z-index: 1;
+}
+
+.card {
+  flex-direction: column;
+  margin-bottom: 60px;
+  border-radius: 3px;
+  border: 1px solid var(--grey-2);
+  background-color: #fff;
 }
 
 .home {
@@ -575,24 +590,32 @@ div, nav, main, button, ul {
   position: relative;
 }
 .slideritem__container {
-  background: 0 0;
-  border: 0;
-  padding: 0;
   flex-direction: column;
   align-items: center;
 }
-.slideritem__img {
-  border-radius: 100px;
-  margin-bottom: 1px;
-  width: 64px;
-  height: 64px;
-  overflow: hidden;
-}
-.slideritem__img img {
-  width: 100%;
-}
 .slideritem:first-child {
   margin-left: 10px;
+}
+
+.profilepicture__container, .profilepicture__container-32, .profilepicture__container-22, .profilepicture__container-64 {
+  border-radius: 100px;
+  margin-bottom: 1px;
+  overflow: hidden;
+}
+.profilepicture__container-64 {
+  width: 64px;
+  height: 64px;
+}
+.profilepicture__container-22 {
+  width: 22px;
+  height: 22px;
+}
+.profilepicture__container-32 {
+  width: 32px;
+  height: 32px;
+}
+.profilepicture__img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -10,22 +10,8 @@
     position: relative;
 
     &__container {
-        background: 0 0;
-        border: 0;
-        padding: 0;
         flex-direction: column;
         align-items: center;
-    }
-
-    &__img{
-        border-radius: 100px;
-        margin-bottom: 1px;
-        width: 64px;
-        height: 64px;
-        overflow: hidden;
-        & img {
-            width: 100%;
-        }
     }
 
     &:first-child{

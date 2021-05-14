@@ -1,0 +1,27 @@
+.profilepicture {
+    &__container {
+        border-radius: 100px;
+        margin-bottom: 1px;
+        overflow: hidden;
+
+        &-64{
+            @extend .profilepicture__container;
+            width: 64px;
+            height: 64px;
+        }
+        &-22{
+            @extend .profilepicture__container;
+            width: 22px;
+            height: 22px;
+        }
+        &-32{
+            @extend .profilepicture__container;
+            width: 32px;
+            height: 32px;
+        }
+
+    }
+    &__img {
+        width: 100%;
+    }
+}
